@@ -10,7 +10,6 @@
 # Title of your website
 title: "MLCIV"
 
-
 # The slogan describes your website and is used on homepage in <title> and other important places
 slogan: "Machine Learning Civilization"
 
@@ -57,7 +56,9 @@ paginate_path: "blog/page:num"
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title/
 highlight: rouge
-gems: [jekyll-paginate]
+plugins: 
+    - 'jekyll-paginate'
+
 excerpt_separator: "<!--more-->"
 include: ['.htaccess']
 # Exclude these files from your production _site
@@ -247,3 +248,33 @@ page-view:
 # used in _includes/footer_scripts
 
 # tawkto_embed_uri:
+
+
+
+## 
+#  _________      .__           .__                
+# /   _____/ ____ |  |__   ____ |  | _____ _______ 
+# \_____  \_/ ___\|  |  \ /  _ \|  | \__  \\_  __ \
+# /        \  \___|   Y  (  <_> )  |__/ __ \|  | \/
+#/_______  /\___  >___|  /\____/|____(____  /__|   
+#        \/     \/     \/                 \/       
+# https://github.com/inukshuk/jekyll-scholar
+#
+scholar:
+  style: apa
+  locale: en
+
+  sort_by: year
+  order: descending
+  bibliography_list_tag: ul
+
+  source: _bibliography
+  repository: papers
+  bibliography: references
+  bibliography_template: bibliography
+
+  replace_strings: true
+
+  details_layout: none
+
+  query: "@*"

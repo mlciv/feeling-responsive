@@ -1,0 +1,53 @@
+---
+layout: default
+format: research-index
+header : no
+---
+
+<div class="row t30">
+	<div class="medium-12 columns">
+    <div class="row">
+    <div class="medium-2 columns">
+    <img style="float: left;" src="{{ site.urlimg }}jie.png">
+    </div><!-- /.medium-2.columns -->
+    <div class="medium-10 columns">
+      <p>I am a Ph.D. student in the <a href="https://cs.utah.edu/">School of
+        Computing</a> at the <a href="https://www.utah.edu">University of
+        Utah</a>, advised by
+      <a href="https://svivek.com">Prof. Vivek Srikumar</a> in the <a
+         href="https://nlpml.cs.utah.edu">Natural Language Processing
+         Group</a>.
+      </p>
+      </p>
+       My reseach interests centered around natural language
+       understanding and machine learning. My current topic is on Abstract
+       Meaning Presentation semantic parsing and language generation. 
+      </p>
+    <section id="profile-right" class="small-12 medium-6 columns social-icons">
+            <ul class="inline-list">
+            {% for social_item in site.data.socialmedia %}
+              <li><a href="{{ social_item.url }}" target="_blank" class="{{ social_item.class }}" title="{{ social_item.title }}"></a></li>
+            {% endfor %}
+            </ul>
+    <section>
+    </div>
+    </div>
+
+		<article>
+			<header>
+				{% if page.subheadline %}<p class="subheadline">{{ page.subheadline }}</p>{% endif %}
+				<h1>{{ page.title }}</h1>
+			</header>
+
+			{% if page.teaser %}
+			<p class="teaser">
+				{{ page.teaser }}
+			</p>
+			{% endif %}
+
+			{{ content }}
+		</article>
+	</div><!-- /.medium-12.columns -->
+</div><!-- /.row -->
+
+

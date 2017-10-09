@@ -192,18 +192,18 @@ ul, ol {
     padding: 0;
 }
 li {
-    margin-left: 0;
+    margin-left: 20px;
 }
 
 .no-bullet {
     list-style: none;
-    margin-left: 0;
+    margin-left: 20px;
 }
 
 li {
     > ul,
     > ol {
-         margin-bottom: 0;
+         margin-bottom: 20px;
     }
 }
 

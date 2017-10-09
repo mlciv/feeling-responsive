@@ -8,6 +8,16 @@
   class: icon-twitter
   title: ""
 
+- name: LinkedIn
+  url: https://www.linkedin.com/in/jiessie/
+  class: icon-linkedin
+  title: ""
+
+- name: Email
+  url: mailto:jcao at cs dot utah dot edu
+  class: icon-mail
+  title: ""
+
 # - name: Mixcloud
 #   url: http://www.mixcloud.com/
 #   class: icon-cloud
