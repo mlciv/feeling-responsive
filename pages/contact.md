@@ -10,4 +10,4 @@ permalink: "/contact/"
 - [Jie][1]
 
 
- [1]: http://cs.utah.edu/~/jcao/
+ [1]: https://www.cs.utah.edu/~jcao/
